@@ -80,6 +80,16 @@ export class LegacyProjectProperties {
     @Property('browser')
     @Property('testsuite.browser')
     testsuiteBrowser: keyof typeof Capabilities = "firefox";
+    
+    /**
+     * Defines a comma-seperated list of browser extension files for
+     * the browser to load.
+     *
+     * DEFAULT: ""
+     */
+    @Property('browser.extensions')
+    @Property('testsuite.browser.extensions')
+    testsuiteBrowserExtensions: string = "";
 
     /**
      *######################################################################################
